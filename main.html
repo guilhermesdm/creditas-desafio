@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creditas</title>
+</head>
+<body>
+    <h1>Creditas</h1>
+
+    <p>Número de parcelas</p>
+    <select id="parcela"></select>
+
+    <p>Garantia</p>
+    <select id="garantia" onchange="renderizarPagina();">
+        <option value="veiculo" selected>Veículo</option>
+        <option value="imovel">Imóvel</option>
+    </select>
+
+    <p id="rangeGarantia">Valor da garantia</p>
+    <input type="number" id="valorGarantia">
+
+    <p id="rangeEmprestimo">Valor do empréstimo</p>
+    <input type="number" id="valorEmprestimo">
+
+    <button onclick="submit();">Solicitar</button>
+
+    <div id="results"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
